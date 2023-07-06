@@ -26,7 +26,7 @@ app.post("/translate", async (req, res) => {
         const response = await axios.post(url, data, {
             headers: {
                 "Content-Type": "application/json",
-                "X-RapidAPI-Key": req.body["X-RapidAPI-Key"],
+                "X-RapidAPI-Key": req.body["key"],
                 "X-RapidAPI-Host": "deepl-translator.p.rapidapi.com",
             },
         });
